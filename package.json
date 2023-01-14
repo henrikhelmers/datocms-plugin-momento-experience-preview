@@ -1,6 +1,6 @@
 {
   "name": "datocms-plugin-momento-experience-preview",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "Add a small description for the plugin here",
   "keywords": ["datocms-plugin"],
@@ -13,6 +13,9 @@
     "coverImage": "",
     "entryPoint": "build/index.html"
   },
+  "files": [
+    "build"
+  ],
   "dependencies": {
     "@datocms/cma-client-browser": "^1.1.22",
     "@types/node": "^18.11.18",
