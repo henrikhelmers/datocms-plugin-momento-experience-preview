@@ -4,6 +4,15 @@
   "private": false,
   "description": "Add a small description for the plugin here",
   "keywords": ["datocms-plugin"],
+  "datoCmsPlugin": {
+    "title": "Momento Experience Preview",
+    "permissions": [
+      "currentUserAccessToken"
+    ],
+    "previewImage": "",
+    "coverImage": "",
+    "entryPoint": "build/index.html"
+  },
   "dependencies": {
     "@datocms/cma-client-browser": "^1.1.22",
     "@types/node": "^18.11.18",
@@ -43,11 +52,5 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
-  },
-  "datoCmsPlugin": {
-    "title": "Momento Experience Preview",
-    "previewImage": "",
-    "coverImage": "",
-    "entryPoint": "build/index.html"
   }
 }
