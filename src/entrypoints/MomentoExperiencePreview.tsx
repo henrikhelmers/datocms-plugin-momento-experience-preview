@@ -39,8 +39,9 @@ export default function MomentoExperiencePreview({ token, audioId, subtitlesId, 
             let result: MomentoSubtitle[] = [];
             let matches;
 
-            // if (typeof(text) != "string") throw "Sorry, Parser accept string only.";
-            if (text === null) return text;
+            if (text === null) {
+              return text;
+            }
 
             let parse = text.replace(/\r\n|\r|\n/g, '\n');
 
@@ -91,8 +92,7 @@ export default function MomentoExperiencePreview({ token, audioId, subtitlesId, 
         onTimeUpdate={(event) => {
           let target = event.target as HTMLAudioElement;
           let currentTime = target.currentTime;
-
-          let subtitle = subtitles.find(s => {
+          let subtitle = subtitles.reverse().find(s => {
             return currentTime > s.startTime && currentTime < s.endTime;
           })?.text ?? " ";
 

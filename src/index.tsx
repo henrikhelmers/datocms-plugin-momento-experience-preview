@@ -24,6 +24,7 @@ connect({
       {
         id: 'momentoExperiencePreview',
         label: 'Momento Experience',
+        startOpen: true,
       },
     ];
   },
