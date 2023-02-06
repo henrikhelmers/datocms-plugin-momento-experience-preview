@@ -24,7 +24,6 @@ export default function MomentoExperiencePreview({ token, audioId, subtitlesId, 
   const [isRevealed, setIsRevealed] = useState<boolean>(false);
   const client = buildClient({
     apiToken: token,
-    environment: 'dev',
   });
 
   useEffect(() => {
